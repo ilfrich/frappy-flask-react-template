@@ -2,11 +2,9 @@ import React from "react"
 import { render } from "react-dom"
 import { BrowserRouter } from "react-router-dom"
 import { withRouter, Switch, Route } from "react-router"
-import Alert from "react-s-alert"
 import { LoginWrapper, UserManager, PermissionCheck } from "@frappy/react-authentication"
 import { DataSetManager } from "@frappy/react-datasets"
 import { ContentManager } from "@frappy/react-content"
-import "react-s-alert/dist/s-alert-default.css"
 import LandingPage from "./containers/LandingPage"
 
 const style = {
@@ -25,7 +23,6 @@ const style = {
 // define your routes here
 const RouterApp = withRouter(props => (
     <div>
-        <Alert stack={{ limit: 3 }} html />
         {/* add header here before the main and add top margin to style.main above */}
         <div style={style.main}>
             <Switch>
