@@ -5,9 +5,9 @@ python-dotenv
 pbu>=1.0.0
 pbumongo>=1.0.0
 
-frappyflaskauth>=1.5.1
-frappyflaskdataset>=1.3.2
-frappyflaskcontent>=1.1.0
+frappyflaskauth>=1.5.2
+frappyflaskdataset>=1.3.3
+frappyflaskcontent>=1.1.1
 frappymongouser>=1.5.1
 frappymongodataset>=1.3.3
 frappymongocontent>=1.0.1
