@@ -26,6 +26,11 @@ const config = {
         filename: "index.js",
         publicPath: "/static",
     },
+    resolve: {
+        alias: {
+            react: path.resolve("./node_modules/react"),
+        },
+    },
     module: {
         rules: [
             {

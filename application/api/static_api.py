@@ -1,8 +1,7 @@
 from flask import render_template
-from config import is_debug
 
 
-def register_endpoints(app):
+def register_endpoints(app, registry):
     """
     Registers all the endpoints used by the frontend to deliver the index.html in all cases.
     :param app: the flask app
@@ -27,7 +26,7 @@ def register_endpoints(app):
         return render_template("index.html")
 
     # prevent caching of the frontend during development
-    if is_debug():
+    if registry.config.is_debug():
         @app.after_request
         def add_header(r):
             """

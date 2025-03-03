@@ -5,7 +5,6 @@
 /_data
 /static/*
 !/static/images
-!/static/favicon.png
 /templates/index.html
 travis/pip.conf
 package-lock.json
